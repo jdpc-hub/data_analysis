@@ -31,9 +31,9 @@ def f(t,A,a,B,b,C):
 ## Calculations ##
 ##################
 
-Degrees_of_freedom = 5
-chi2x = Chi2(x,f(t,Ax,ax,Bx,bx,Cx-4))/Degrees_of_freedom
-chi2y = Chi2(y,f(t,Ay,ay,By,by,Cy-4))/Degrees_of_freedom
+Degrees_of_freedom = len(x)
+chi2x = Chi2(x,f(t,Ax,ax,Bx,bx,Cx))/Degrees_of_freedom
+chi2y = Chi2(y,f(t,Ay,ay,By,by,Cy))/Degrees_of_freedom
 
 print("Chi² of fx:",chi2x)
 print("Chi² of fy:",chi2y)
