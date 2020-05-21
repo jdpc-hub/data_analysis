@@ -14,7 +14,7 @@ y = data[:,2]+shift
 
 def Chi2(observed, expected):
     """observed and expected are numpy's array"""
-    return sum((observed - expected)**2/abs(expected))
+    return sum((observed - expected)**2/expected)
 
 ###########################
 # 1. y as a function of t #
